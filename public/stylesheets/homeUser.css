@@ -1,0 +1,26 @@
+body.homeUser {
+    background-color: black;
+}
+body.homeUser main {
+    height: calc(100vh - 94px);
+} 
+body.homeUser figure {
+    width: 56%;
+    margin: 35px auto;
+    position: relative;
+}
+body.homeUser figure img {
+    width: 100%;
+}
+
+body.homeUser div {
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+}
+body.homeUser div p {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(250,250,250,0.5);
+    margin: 0;
+}

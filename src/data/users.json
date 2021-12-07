@@ -1,0 +1,20 @@
+[
+    {
+        "nombre" : "pepito",
+        "color" : "blue",
+        "email" : "pepito@hotmail.com",
+        "edad" : 24
+    },
+    {
+        "nombre" : "maria",
+        "color" : "blue",
+        "email" : "maria@hotmail.com",
+        "edad" : 35
+    },
+    {
+        "nombre" : "josefa",
+        "color" : "rojo",
+        "email" : "josefa@hotmail.com",
+        "edad" : 21
+    }
+]

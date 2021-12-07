@@ -1,0 +1,20 @@
+body.exitoso main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+}
+body.exitoso main section {
+    width: 36%;
+    background: whitesmoke;
+    padding: 50px 100px;
+}
+body.exitoso main article {
+    text-align: justify;
+    background-color: whitesmoke;
+    margin: 45px 0;
+}
+body.exitoso main article p {
+    line-height: 1.5;
+}

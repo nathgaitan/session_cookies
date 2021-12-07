@@ -1,0 +1,22 @@
+[
+    {
+        "nombre" : "verde pastel",
+        "tonalidad" : "rgb(214,246,221)"
+    },
+    {
+        "nombre" : "violeta",
+        "tonalidad" : "rgb(218,196,247)"
+    },
+    {
+        "nombre" : "rosa pastel",
+        "tonalidad" : "rgb(244,152,156)"
+    },
+    {
+        "nombre" : "caqui",
+        "tonalidad" : "rgb(235,210,180)"
+    },
+    {
+        "nombre" : "azul cremoso",
+        "tonalidad" : "rgb(172,236,247)"  
+    }
+]

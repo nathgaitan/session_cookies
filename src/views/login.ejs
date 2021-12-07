@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/styles.css' />
+</head>
+
+<body class="login">
+  <main>
+    <h2>
+      <%= title %>
+    </h2>
+    <form action="/" method="POST">
+    
+      <div class="box-input">
+        <label for="name">Ingrese su nombre</label>
+        <input type="text" name="name" id="name" value="<%= locals.old && old.name ? old.name : null %>">
+        <small>
+          <%= locals.errores && errores.name ? errores.name.msg : null %>
+        </small>
+      </div>
+    
+      <div class="box-input">
+        <label for="color">Elija el color del nombre</label>
+        <select name="color" id="color">
+          <option value="" selected hidden>Seleccione una opción...</option>
+          <% var colores = [
+          {
+              "nombre" : "verde pastel",
+              "tonalidad" : "rgb(214,246,221)"
+          },
+          {
+              "nombre" : "violeta",
+              "tonalidad" : "rgb(218,196,247)"
+          },
+          {
+              "nombre" : "rosa pastel",
+              "tonalidad" : "rgb(244,152,156)"
+          },
+          {
+              "nombre" : "caqui",
+              "tonalidad" : "rgb(235,210,180)"
+          },
+          {
+              "nombre" : "azul cremoso",
+              "tonalidad" : "rgb(172,236,247)"  
+          }
+      ] %> 
+           <%  colores.forEach(color => { %>
+             <option value="<%= color.tonalidad %>" <%= locals.old && old.color === color.tonalidad ? 'selected' : null %>>
+             <%= color.nombre %> 
+             </option>
+             
+          <% }) %> 
+    
+        </select>
+        <small>
+          <%= locals.errores && errores.color ? errores.color.msg : null %>
+        </small>
+      </div>
+    
+      <div class="box-input">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null %>">
+        <small>
+          <%= locals.errores && errores.email ? errores.email.msg : null %>
+        </small>
+      </div>
+    
+      <div class="box-input">
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" value="<%= locals.old && old.edad ? old.edad : null %>">
+        <small>
+          <%= locals.errores && errores.edad ? errores.edad.msg : null %>
+        </small>
+      </div>
+      <div class="box-input input-check">
+        <input type="checkbox" name="recordar" id="recordar">
+        <label for="recordar">¿Desea recordar el color elegido?</label>
+      </div>
+      <div class="box-input input-submit">
+        <input type="submit" value="Cargar">
+      </div>
+    
+    </form>
+  </main>
+</body>
+
+</html>
